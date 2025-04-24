@@ -1,0 +1,107 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    text-align: center;
+    
+}
+/*1.- el padding son los bordes que va a tener por decirlo asi
+2.-el min-height es el minumo de altura que puede tener */
+nav {
+    padding: 32px 32px;
+    min-height: 80px;
+    background-color: olive;
+}
+/* Primero imagina que estas codificando en una oartitura y puedes codificar en do, re, fa,etc.
+la conf vertical-align sive para establecer en cual de esas lineas quiere poner tu texto, imagen o lo que sea*/
+nav a {
+    vertical-align: bottom;
+}
+
+nav a:hover {
+    color: red;
+}
+/*cuando se cambia el tamaño de una imagen esta algunas veces tiende a desfigurarse
+entonces la conf aspect-ratio sirve para cambiar de escala la imagen sin que esta se deforme*/
+nav img {
+
+    max-height: 80px;
+    aspect-ratio: 1 / 1;
+}
+nav li,
+nav ul {
+    display: inline-block;
+    vertical-align: bottom;
+}
+nav ul,
+nav ul li,
+.spacer {
+    display: inline-block;
+}
+.spacer {
+    width: calc(100% - 84px - 196px - 32px - 60px );
+    }
+    /*esta conf es para hacer el margen de abajo mas grande para asi centrar las opciones*/
+    nav ul {
+        margin-bottom: 35px;
+    }
+    /*esta conf es para que cada item de la barra de tareas supeior tenga un espacio a la derecha*/
+nav ul li {
+    margin-right: 15px;
+}
+/*para que el ultimo item no tenga espacio a la derecha*/
+#last-item {
+    margin-right: 0px;
+}
+/*para que las opciones se hagan blancas*/
+nav ul li a:link,
+nav ul li a:visited {
+   color: white;}
+ #current-page {
+    color: darkgreen;
+}
+   /*para que las opciones se hagan marrones cuando el curso este sobre ellas*/
+
+nav ul li a:hover {
+       color: maroon;
+    }
+/*para que cuando una de las opciones sea seleccionada por el surco cambie a este color*/
+nav ul li a:active {
+    color: orange;
+}
+
+.contenedor, aside {
+    min-height: 57vh;
+    display: inline-block;
+
+}
+
+aside {
+    width: 30vh;
+}
+section{
+    display: inline-block;
+}
+.abajo {
+background-color: olive;
+padding: 1rem 2rem;
+text-align: center;
+position: absolutes;
+}
+#side-bar {
+    width: 35vh;
+    min-height: 50vh;
+    display: block;
+background-color: brown;}
+p {
+  max-width:100vh ;
+  padding: 10px;  
+  border: 5px solid;
+  border-color:rgb(79, 4, 4);
+}
+section {
+    width: 70vh;
+    margin: auto;
+}
